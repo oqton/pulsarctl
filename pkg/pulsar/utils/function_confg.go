@@ -75,9 +75,8 @@ type FunctionConfig struct {
 	// SecretProviderConfigurator.getSecretObjectType() method.
 	Secrets map[string]interface{} `json:"secrets" yaml:"secrets"`
 
-
 	// This is an arbitrary string that can be interpreted by the function runtime
 	// to change behavior at runtime. Currently, this primarily used by the KubernetesManifestCustomizer
 	// interface
-	CustomRuntimeOptions string;
+	CustomRuntimeOptions string `json:"customRuntimeOptions" yaml:"customRuntimeOptions"`
 }
